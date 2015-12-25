@@ -1,5 +1,5 @@
 Zepto(function($){
-	$('.showList').on('click', function() {		
+	$('.showList').mousedownon(function() {		
 		var index = $(this).index();
 		$('#typeList').hide();
 		$('nav').show();
@@ -8,7 +8,7 @@ Zepto(function($){
 		$('body').scrollTop(0);	
 	});
 
-	$('.back').on('click', function() {	
+	$('.back').on('touchstart', function() {	
 		$('nav').hide();
 		$('.qListDiv').hide();
 		$('footer').show();
@@ -16,7 +16,7 @@ Zepto(function($){
 		$('body').scrollTop(0);	
 	});
 
-	$('.listTitle').on('click', function() {
+	$('.listTitle').on('touchstart', function() {
 		$(this).toggleClass('fcw');
 		$(this).next('.hide').toggleClass('show');
 		$(this).next('.hide').toggleClass('hide0');
