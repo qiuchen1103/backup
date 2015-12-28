@@ -84,7 +84,7 @@ nav .back img{
 .qListDiv .qList .listTitle{
 	display: table;
 	width: 100%;
-	min-height: 50px;
+	height: 50px;
 	font-size: 15px;
 }
 .qListDiv .qList .listTitle:hover{
@@ -95,31 +95,34 @@ nav .back img{
 	vertical-align: middle;
 
 }
-.qListDiv .qList .fcw{
-	background-color: #1f1f1f;
-	color: #fff;
-}
+
 .qListDiv .qList .hide{
 	max-height: 0px;
 	padding: 0 10px;
 	overflow: hidden;
+	background-color: #000;
+	color: #a4a4a4;
+}
+
+.qListDiv .qList .fcw{
+	background-color: #1f1f1f;
 	color: #fff;
 }
 
-.qListDiv .qList .show{
+/*.qListDiv .qList .show{
   background-color: #1f1f1f;
   max-height: 9999px;
   -moz-transition: max-height 5s ease-in-out;
   -o-transition: max-height 5s ease-in-out;
   -webkit-transition: max-height 5s ease-in-out;
   transition: max-height 5s ease-in-out;
-}
-.qListDiv .qList .hide0{ 
+}*/
+/*.qListDiv .qList .hide0{ 
   -moz-transition: max-height 0.5s ease-out;
   -o-transition: max-height 0.5s ease-out;
   -webkit-transition: max-height 0.5s ease-out;
   transition: max-height 0.5s ease-out;
-}
+}*/
 
 
 /*=====页脚开始=====*/

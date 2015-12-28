@@ -5,14 +5,13 @@ module.exports = function(grunt) {
     uglify: {
       compressjs: {
         files: {
-          'js/basement.min.js': ['js/basement.js'],
           'js/main.min.js' : ['js/main.js']
         }
       }
     },
     watch: {
       scripts: {
-        files: ['js/basement.js', 'js/main.js'],
+        files: ['js/main.js'],
         tasks: ['uglify']
       },
       livereload: {
@@ -22,14 +21,13 @@ module.exports = function(grunt) {
           files: [
               'index.html',
               'css/FAQ.css',
-              'js/basement.js', 
               'js/main.js'
           ]
       }
     },
     connect: {
       options: {
-          port: 9000,
+          port: 7000,
           open: true,
           livereload: 35729,
           // Change this to '0.0.0.0' to access the server from outside
@@ -37,7 +35,7 @@ module.exports = function(grunt) {
       },
       server: {
         options: {
-          port: 9001,
+          port: 7001,
           base: './'
         }
       }

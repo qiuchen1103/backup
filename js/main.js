@@ -17,10 +17,29 @@ Zepto(function($){
 		$('body').scrollTop(0);	
 	});
 
-	$('.listTitle').mousedown(function() {
-		$(this).toggleClass('fcw');
-		$(this).next('.hide').toggleClass('show');
-		$(this).next('.hide').toggleClass('hide0');
+	var olistTitles = $('.listTitle');
+	for (var i = 0; i < olistTitles.length; i++) {
+		olistTitles[i].btn = true;
+	}
+
+	olistTitles.mousedown(function() {
+		
+		var _this = $(this);
+		_this.toggleClass('fcw');
+		_this.next('.hide').toggleClass('fcw');
+		
+		if (_this[0].btn) {
+			_this.next('.hide').animate({
+				maxHeight: '9999px'
+			}, 1300, 'ease-in-out');
+
+		} else if (!_this[0].btn) {
+			_this.next('.hide').animate({
+				maxHeight: '0px'
+			}, 500, 'ease-out');
+
+		}
+		_this[0].btn = !_this[0].btn;
 		
 	});
 
