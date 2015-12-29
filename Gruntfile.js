@@ -5,7 +5,8 @@ module.exports = function(grunt) {
     uglify: {
       compressjs: {
         files: {
-          'js/main.min.js' : ['workPlace/main.js']
+          'js/main.min.js' : ['workPlace/main.js'],
+          'js/zepto.touch.min.js' : ['js/zepto.touch.js']
         }
       }
     },
