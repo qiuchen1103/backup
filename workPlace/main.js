@@ -3,7 +3,7 @@ Zepto(function($){
 	$('.showList').tap(function() {	
 
 		var _this = $(this);	
-		var index = _this.index();
+		var index = _this.index() / 2;
 
 		_this.addClass('active');
 		setTimeout(function() {
@@ -18,14 +18,16 @@ Zepto(function($){
 
 		setTimeout(function() {	
 			$('nav').show();
-			$( $('.qListDiv')[index] ).show();		
+			$( $('.qList')[index] ).show();		
 		},360);
+
+		console.log(index);
 
 	});
 
 	$('.back').tap(function() {	
 		$('nav').hide();
-		$('.qListDiv').hide();
+		$('.qList').hide();
 
 		setTimeout(function() {
 			$('body').scrollTop(0);		

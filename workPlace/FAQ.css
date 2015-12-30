@@ -2,8 +2,15 @@ html,body{
 	padding: 0;
 	margin: 0;
 	background-color: #000;
-	font: 20px 'Microsoft YaHei';
+	font-family: 'Microsoft YaHei';
+	font-size: 12px;
 	color: #fff;
+}
+[data-dpr="2"] html,body{
+	font-size: 20px;
+}
+[data-dpr="3"] html,body{
+	font-size: 30px;
 }
 a{
 	color: #fff;
@@ -15,34 +22,30 @@ a{
 	/*display: none;*/
 }
 #typeList .tListT{
-	max-width: 704px;
-	padding: 34px 24px;		
+	max-width: 9.39rem;
+	padding: .97rem .32rem .42rem .32rem;		
 	margin: 0 auto;
 	background-color: #000;
 	color: #fff;
-	font: 20px 'Microsoft YaHei';
 }
 #typeList .tList{
-	max-width: 752px;		
+	max-width: 10.03rem;	
+	/*min-height: 8.88rem;	*/
 	margin: 0 auto;
 	padding: 0;
 	background-color: #1f1f1f;
 	color: #a4a4a4;
 }
 #typeList .tList li{
-	padding: 0 24px;
-	height: 94px;
-	line-height: 94px;
+	padding: .42rem .32rem;
 	list-style: none;
-}
-#typeList .tList li:last-child{
-	border-bottom: 0px;
 }
 #typeList .tList .active{
 	background-color: #3a3a3a;
 	color: #fff;
 }
-#typeList .tList li .border{
+#typeList .tList .border{
+	margin: 0 .32rem;
 	border-bottom:  1px solid #2f2f2f;
 }
 /*=====首屏结束=====*/
@@ -55,59 +58,56 @@ nav{
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 94px;
-
+	height: 1.8rem;
 	background-color: #000;
 }
 nav .back{
-	max-width: 704px;
-	height: 94px;
-	padding: 0 24px;
+	position: relative;
+	max-width: 9.39rem;	
+	padding: .97rem .32rem .42rem 1.5rem;
 	margin: 0 auto;	
-	line-height: 94px;
 }
 nav .back img{
-	width: 60px;
-	height: 60px;
-	margin: 0 15px -25px 0;
+	position: absolute;
+	top: .8rem;
+	left: .3rem;
+	width: .8rem;
+	height: .8rem;
 }
 nav .border{
+	margin: 0 .32rem;
 	border-bottom:  1px solid #2f2f2f;
 }
 
-.qListDiv{
+#typePage .qList{	
 	display: none;
-	margin-top: 94px;
-}
-.qListDiv .qList{	
-	max-width: 704px;
-	padding: 0 24px;		
-	margin: 0 auto;
+	max-width: 9.39rem;
+	padding: 0 .32rem;		
+	margin: 1.8rem auto 0 auto;
 	color: #a4a4a4;
 }
-.qListDiv .qList li{
+#typePage .qList li{
 	display: block;	
 	list-style: none;
 
 }
-.qListDiv .qList .active{
+#typePage .qList .active{
 	background-color: #1f1f1f;
 	color: #fff;
 }
-.qListDiv .qList .listTitle{
+#typePage .qList .listTitle{
 	display: table;
 	width: 100%;
-	height: 94px;
-	font-size: 20px;
+	height: 1.25rem;
 }
-.qListDiv .qList .listTitle .ver{
+#typePage .qList .listTitle .ver{
 	display: table-cell;
 	vertical-align: middle;
 	text-align: justify;
 	text-justify: inter-ideograph;
 }
 
-.qListDiv .qList .hide{	
+#typePage .qList .hide{	
 	max-height: 0px;
 	overflow: hidden;
 	background-color: #000;
@@ -116,20 +116,20 @@ nav .border{
 	color: #fff;*/
 	
 }
-.qListDiv .qList .hide .padding{
-	padding: 10px 0px;
+#typePage .qList .hide .padding{
+	padding: 0.13rem 0px;
 }
-.qListDiv .qList .hide .padding p{
+#typePage .qList .hide .padding p{
 	padding: 0;
 	margin: 0;
 	text-indent: 2ex;
 	text-align: justify;
 	text-justify: inter-ideograph;
 }
-.qListDiv .qList li .border{
+#typePage .qList li .border{
 	border-bottom:  1px solid #2f2f2f;
 }
-.qListDiv .qList .show{	
+#typePage .qList .show{	
 	max-height: 9999px;
 	background-color: #1f1f1f;
 	color: #fff;
@@ -140,10 +140,9 @@ nav .border{
 /*=====页脚开始=====*/
 footer{
 	max-width: 100%;
-	padding: 96px 10px 96px 10px;
+	padding: 1.28rem 0.13rem 1.28rem 0.13rem;
 	color: #a4a4a4;
 	text-align: center;
-	font: 20px 'Microsoft YaHei';
 }
 footer a,footer span{
 	color: #3b9591;
