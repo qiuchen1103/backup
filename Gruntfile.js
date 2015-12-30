@@ -5,8 +5,7 @@ module.exports = function(grunt) {
     uglify: {
       compressjs: {
         files: {
-          'js/main.min.js' : ['workPlace/main.js'],
-          'js/zepto.touch.min.js' : ['js/zepto.touch.js']
+          'js/main.min.js' : ['workPlace/main.js']
         }
       }
     },
@@ -23,7 +22,7 @@ module.exports = function(grunt) {
        main: {
           files: [
             // {src: ['path/*'], dest: 'dest/', filter: 'isFile'}, // 复制path目录下的所有文件
-            {src: ['css/**','js/**','img/**','*.html'], dest: 'FAQ/'} // 复制path目录下的所有目录和文件
+            {src: ['css/**','js/**','img/**','index.html'], dest: 'FAQ/'} // 复制path目录下的所有目录和文件
           ]
         }
     },
